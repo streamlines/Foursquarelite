@@ -1,0 +1,374 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1178122-C954-462E-BCB1-AB307F279DE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_4SquareLite</RootNamespace>
+    <AssemblyName>4SquareLite</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>2AC76CE7-3E8C-402d-85E7-AE9C98D7B6BA</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <DeployDirSuffix>_4SquareLite</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6.5.3 Professional DTK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>4sql.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.SR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Addins\System.SR.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CFMeasureString.cs" />
+    <Compile Include="frmLeaderboardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeaderboardList.Designer.cs">
+      <DependentUpon>frmLeaderboardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTodoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTodoList.Designer.cs">
+      <DependentUpon>frmTodoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptSerializer.cs" />
+    <Compile Include="frmAddTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTip.Designer.cs">
+      <DependentUpon>frmAddTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckin.Designer.cs">
+      <DependentUpon>frmCheckin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckinDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckinDetails.Designer.cs">
+      <DependentUpon>frmCheckinDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckinResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckinResults.Designer.cs">
+      <DependentUpon>frmCheckinResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGPS.Designer.cs">
+      <DependentUpon>frmGPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchUser.Designer.cs">
+      <DependentUpon>frmSearchUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchVenue.Designer.cs">
+      <DependentUpon>frmSearchVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecialDetails.Designer.cs">
+      <DependentUpon>frmSpecialDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipDetails.Designer.cs">
+      <DependentUpon>frmTipDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipList.Designer.cs">
+      <DependentUpon>frmTipList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenueDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenueDetails.Designer.cs">
+      <DependentUpon>frmVenueDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenueFullMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenueFullMap.Designer.cs">
+      <DependentUpon>frmVenueFullMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenueInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenueInput.Designer.cs">
+      <DependentUpon>frmVenueInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenueList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenueList.Designer.cs">
+      <DependentUpon>frmVenueList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleGeoCode.cs" />
+    <Compile Include="NetSquare.cs" />
+    <Compile Include="TestWeb.cs" />
+    <Compile Include="ucBadgeListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBadgeListItem.Designer.cs">
+      <DependentUpon>ucBadgeListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCheckinListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCheckinListItem.Designer.cs">
+      <DependentUpon>ucCheckinListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckinList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckinList.Designer.cs">
+      <DependentUpon>frmCheckinList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserDetails.Designer.cs">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalSettings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddTip.resx">
+      <DependentUpon>frmAddTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckin.resx">
+      <DependentUpon>frmCheckin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckinDetails.resx">
+      <DependentUpon>frmCheckinDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckinResults.resx">
+      <DependentUpon>frmCheckinResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGPS.resx">
+      <DependentUpon>frmGPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeaderboardList.resx">
+      <DependentUpon>frmLeaderboardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchUser.resx">
+      <DependentUpon>frmSearchUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchVenue.resx">
+      <DependentUpon>frmSearchVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecialDetails.resx">
+      <DependentUpon>frmSpecialDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipDetails.resx">
+      <DependentUpon>frmTipDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipList.resx">
+      <DependentUpon>frmTipList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodoList.resx">
+      <DependentUpon>frmTodoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenueDetails.resx">
+      <DependentUpon>frmVenueDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenueFullMap.resx">
+      <DependentUpon>frmVenueFullMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenueInput.resx">
+      <DependentUpon>frmVenueInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenueList.resx">
+      <DependentUpon>frmVenueList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBadgeListItem.resx">
+      <DependentUpon>ucBadgeListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCheckinListItem.resx">
+      <DependentUpon>ucCheckinListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckinList.resx">
+      <DependentUpon>frmCheckinList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDetails.resx">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLeaderboardItem.resx">
+      <DependentUpon>ucLeaderboardItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucScoreListItem.resx">
+      <DependentUpon>ucScoreListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSpecialListItem.resx">
+      <DependentUpon>ucSpecialListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTipListItem.resx">
+      <DependentUpon>ucTipListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserListItem.resx">
+      <DependentUpon>ucUserListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVenueListItem.resx">
+      <DependentUpon>ucVenueListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucLeaderboardItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeaderboardItem.Designer.cs">
+      <DependentUpon>ucLeaderboardItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucScoreListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucScoreListItem.Designer.cs">
+      <DependentUpon>ucScoreListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSpecialListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSpecialListItem.Designer.cs">
+      <DependentUpon>ucSpecialListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTipListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTipListItem.Designer.cs">
+      <DependentUpon>ucTipListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUserListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUserListItem.Designer.cs">
+      <DependentUpon>ucUserListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVenueListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVenueListItem.Designer.cs">
+      <DependentUpon>ucVenueListItem.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4sql.ico" />
+    <Content Include="JSON Samples.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoCoding\GeoCoding.csproj">
+      <Project>{2481B9DF-24C8-4E63-8B50-971E3549A1B6}</Project>
+      <Name>GeoCoding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPS\Microsoft.WindowsMobile.Samples.Location.csproj">
+      <Project>{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}</Project>
+      <Name>Microsoft.WindowsMobile.Samples.Location</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

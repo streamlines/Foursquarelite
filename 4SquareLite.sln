@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4SquareLite", "4SquareLite.csproj", "{E1178122-C954-462E-BCB1-AB307F279DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.WindowsMobile.Samples.Location", "..\GPS\Microsoft.WindowsMobile.Samples.Location.csproj", "{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "4SqLiteDeployment", "..\4SqLiteDeployment\4SqLiteDeployment.vddproj", "{384EC0D6-EAE4-45FE-B720-B461B0C9F984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCoding", "..\GeoCoding\GeoCoding.csproj", "{2481B9DF-24C8-4E63-8B50-971E3549A1B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1178122-C954-462E-BCB1-AB307F279DE5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB77C1EE-A383-4CD5-A107-1C7C26A9E6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384EC0D6-EAE4-45FE-B720-B461B0C9F984}.Debug|Any CPU.ActiveCfg = Debug
+		{384EC0D6-EAE4-45FE-B720-B461B0C9F984}.Release|Any CPU.ActiveCfg = Release
+		{2481B9DF-24C8-4E63-8B50-971E3549A1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2481B9DF-24C8-4E63-8B50-971E3549A1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2481B9DF-24C8-4E63-8B50-971E3549A1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2481B9DF-24C8-4E63-8B50-971E3549A1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

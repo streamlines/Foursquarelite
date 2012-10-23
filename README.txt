@@ -1,0 +1,1 @@
+This is a foursquare client (www.foursquare.com) for Windows Mobile 6.5, it used the .Net compact Framework 3.5, and uses a foursquare library that was written for .Net 4 to serialise the JSON responses from the foursquare API. This has been modified for .net 3.5 and updated for a later release of the API.
